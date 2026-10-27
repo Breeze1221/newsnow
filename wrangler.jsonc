@@ -16,5 +16,14 @@
       "head_sampling_rate": 1,
       "persist": true
     }
-  }
+  },
+  // D1数据库绑定
+  "d1_databases": [
+    {
+      "binding": "DB", // 代码内访问的变量名，db0连接器要和这个一致
+      "database_name": "newsnow", // 你在Cloudflare后台创建的D1数据库名称
+      "database_id": "cd9679d6-f5aa-495f-ab43-67aee2f89faa", // 后台复制的数据库ID
+      "preview_database_id": "DB" // 本地wrangler dev预览使用
+    }
+  ]
 }
